@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2e8d9;
+    color: #392719;
+}
+
+header {
+    background: #382316;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 85vh;
+}
+
+aside {
+    background: #fffaf2;
+    padding: 22px;
+}
+
+aside h2, aside h3 {
+    margin: 15px 0;
+    font-family: Georgia, serif;
+}
+
+aside label {
+    display: block;
+    margin: 12px 0;
+}
+
+aside input[type="color"] {
+    width: 100%;
+    height: 38px;
+}
+
+aside input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    background: #79502f;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 7px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #4e321e;
+}
+
+main {
+    padding: 25px;
+    text-align: center;
+}
+
+main h2 {
+    margin-bottom: 15px;
+    font-family: Georgia, serif;
+}
+
+#room {
+    height: 600px;
+    width: 100%;
+    background: #cfc3b1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#room canvas {
+    display: block;
+}
+
+main p {
+    padding: 15px;
+}
+
+#designList {
+    margin-top: 15px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+#designList button {
+    font-size: 12px;
+}
+
+@media(max-width: 750px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    #room {
+        height: 420px;
+    }
+}
